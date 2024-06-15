@@ -8,15 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="wheel" id="wheel">
-            <div class="segment" style="transform: rotate(0deg); background-color: #f44336;">1</div>
-            <div class="segment" style="transform: rotate(60deg); background-color: #e91e63;">2</div>
-            <div class="segment" style="transform: rotate(120deg); background-color: #9c27b0;">3</div>
-            <div class="segment" style="transform: rotate(180deg); background-color: #673ab7;">4</div>
-            <div class="segment" style="transform: rotate(240deg); background-color: #3f51b5;">5</div>
-            <div class="segment" style="transform: rotate(300deg); background-color: #2196f3;">6</div>
+        <div class="wheel-container">
+            <div class="wheel" id="wheel">
+                <div class="segment" style="transform: rotate(0deg); background-color: #f44336;">1</div>
+                <div class="segment" style="transform: rotate(60deg); background-color: #e91e63;">2</div>
+                <div class="segment" style="transform: rotate(120deg); background-color: #9c27b0;">3</div>
+                <div class="segment" style="transform: rotate(180deg); background-color: #673ab7;">4</div>
+                <div class="segment" style="transform: rotate(240deg); background-color: #3f51b5;">5</div>
+                <div class="segment" style="transform: rotate(300deg); background-color: #2196f3;">6</div>
+            </div>
+            <div class="arrow"></div>
         </div>
         <button id="spinButton">Spin</button>
+        <div id="result" class="result">Result: </div>
     </div>
 
     <script src="app.js"></script>
