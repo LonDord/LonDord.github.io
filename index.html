@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheel of Fortune</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="wheel-container">
-            <div class="wheel" id="wheel">
-                <div class="segment" style="transform: rotate(0deg); background-color: #f44336;">1</div>
-                <div class="segment" style="transform: rotate(60deg); background-color: #e91e63;">2</div>
-                <div class="segment" style="transform: rotate(120deg); background-color: #9c27b0;">3</div>
-                <div class="segment" style="transform: rotate(180deg); background-color: #673ab7;">4</div>
-                <div class="segment" style="transform: rotate(240deg); background-color: #3f51b5;">5</div>
-                <div class="segment" style="transform: rotate(300deg); background-color: #2196f3;">6</div>
-            </div>
-            <div class="arrow"></div>
-        </div>
-        <button id="spinButton">Spin</button>
-        <div id="result" class="result">Result: </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn">Spin</button>
+        <img src="spinner-arrow-.svg" alt="spinner-arrow" />
+      </div>
+      <div id="final-value">
+        <p>Click On The Spin Button To Start</p>
+      </div>
     </div>
-
-    <script src="app.js"></script>
-</body>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
