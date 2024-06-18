@@ -1,4 +1,4 @@
-const socket = io('https://tele-londord.amvera.io'); // URL сервера
+const socket = io('https://telebot-londord.amvera.io/'); // URL сервера
 
 socket.on('waiting', (data) => {
     document.getElementById('message').innerText = data.message;
